@@ -1,8 +1,15 @@
 # Transmission Control Protocol over Block Chain
 
+## goals
+
 TCPoBC is protocol to transfer TCP datagrams in a cryptographically verifiable 
 manner, while allowing a distributed non-fungible record of all
 datagrams ever sent.
+
+this is done by requiring a proof of work, and digital signatures to send a packet.
+
+the proof of works difficulty will be scaled based on the total network computing power,
+to achieve a throughput of 1 datagram per second.
 
 ## Prerequisites
 
