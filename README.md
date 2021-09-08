@@ -11,13 +11,13 @@ destination host, and a 4096 bit pivate RSA key. [note: what format?].
 
 ## format of a TCPoBC datagram
 
-32 bits 	: complete SHA-1 hash of last (globaly) transmited datagram
-4096 bits	: key of the destination host
-64 bits		: unix time when the proces of sending started
-64 bits 	: length of the payload TCP datagram in bytes
-N bytes 	: the payload TCP datagram
-4096 bits	: siganture of the sender for _all_ precidng values
-64 bits		: nonce value generated when senfing
+    32 bits 	: complete SHA-1 hash of last (globaly) transmited datagram
+    4096 bits	: key of the destination host
+    64 bits	: unix time when the proces of sending started
+    64 bits 	: length of the payload TCP datagram in bytes
+    N bytes 	: the payload TCP datagram
+    4096 bits	: siganture of the sender for _all_ precidng values
+    64 bits	: nonce value generated when senfing
 
 all valuse litle endian
 
